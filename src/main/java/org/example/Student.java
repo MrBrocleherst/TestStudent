@@ -76,9 +76,9 @@ class main {
         student2.displayStudentInfo();
 
         // Використання сеттерів для оновлення інформації
-        student1.setName("Edem");
-        student1.setAge(31);
-        student1.setStudentId("E311993");
+        student1.setName("Antony");
+        student1.setAge(22);
+        student1.setStudentId("A032002");
         student1.setGpa(8.9);
 
         // Виведення оновленої інформації
