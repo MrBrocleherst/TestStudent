@@ -88,6 +88,7 @@ class StudentMain {
         double maxGpa = 0.0;
         Student topStudent = null;
 
+        System.out.println("All Students:");
         for (Student student : students) {
             if (student.getGpa() > maxGpa) {
                 maxGpa = student.getGpa();
@@ -95,6 +96,7 @@ class StudentMain {
             }
         }
 
+        // Вывод студента с максимальным GPA
         System.out.println("\nStudent with the highest GPA:");
         if (topStudent != null) {
             topStudent.displayStudentInfo();
@@ -117,5 +119,26 @@ class StudentMain {
         } else {
             System.out.println("Student with ID " + searchId + " not found.");
         }
+
+        // Демонстрация использования конструкторов и сеттеров
+        System.out.println("\nAdditional Students:");
+        Student student1 = new Student();
+        student1.displayStudentInfo();
+
+        Student student2 = new Student("Dana", 20, "D199408", 5.7);
+        student2.displayStudentInfo();
+
+        student1.setName("Antony");
+        student1.setAge(22);
+        student1.setStudentId("A032002");
+        student1.setGpa(8.9);
+
+        System.out.println("\nUpdated Student Info:");
+        student1.displayStudentInfo();
+
+        System.out.println("Student Name: " + student2.getName());
+        System.out.println("Student Age: " + student2.getAge());
+        System.out.println("Student ID: " + student2.getStudentId());
+        System.out.println("Student GPA: " + student2.getGpa());
     }
 }
